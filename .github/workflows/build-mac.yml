@@ -35,7 +35,7 @@ jobs:
         run: npm run build:electron
 
       - name: 打包 macOS 应用（universal：Intel + Apple Silicon 通用）
-        run: npx electron-builder --mac --universal --config.directories.output=release
+        run: npx electron-builder --mac --universal --publish never --config.directories.output=release
 
       - name: 上传安装包产物
         uses: actions/upload-artifact@v4
