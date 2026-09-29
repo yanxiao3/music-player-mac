@@ -22,10 +22,12 @@ jobs:
           cache: npm
 
       - name: 使用官方 npm 源（CI 网络）
-        run: npm config set registry https://registry.npmjs.org
+        run: |
+          rm -f .npmrc
+          npm config set registry https://registry.npmjs.org
 
       - name: 安装依赖
-        run: npm install
+        run: npm install --registry=https://registry.npmjs.org
 
       - name: 还原应用图标
         run: base64 -d electron/icon.png.b64 > electron/icon.png
