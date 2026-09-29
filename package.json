@@ -44,10 +44,7 @@
         "zip"
       ],
       "category": "public.app-category.music",
-      "icon": "electron/icon.png",
-      "arch": [
-        "universal"
-      ]
+      "icon": "electron/icon.png"
     },
     "nsis": {
       "oneClick": false,
