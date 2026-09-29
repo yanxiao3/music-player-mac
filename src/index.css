@@ -1,0 +1,30 @@
+@import url('https://miaoda.feishu.cn/fonts/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./tailwind-theme.css";
+@import "./typography.css";
+
+@keyframes backdrop-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 细滚动条，贴合深色界面 */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: hsl(0 0% 24%);
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: hsl(0 0% 32%);
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
