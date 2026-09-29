@@ -29,7 +29,7 @@ jobs:
         run: npm install --registry=https://registry.npmjs.org
 
       - name: 还原应用图标
-        run: base64 -d electron/icon.png.b64 > electron/icon.png
+        run: base64 -D -i electron/icon.png.b64 -o electron/icon.png
 
       - name: 构建渲染进程
         run: npm run build:electron
