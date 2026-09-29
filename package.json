@@ -1,6 +1,8 @@
 {
   "name": "miaoda-react-standard-webapp-app",
   "version": "1.0.0",
+  "description": "本地音乐播放器",
+  "author": "yanxiao3",
   "private": true,
   "type": "module",
   "main": "electron/main.mjs",
@@ -43,11 +45,9 @@
       ],
       "category": "public.app-category.music",
       "icon": "electron/icon.png",
-      "identity": null,
       "arch": [
         "universal"
-      ],
-      "darkModeSupport": true
+      ]
     },
     "nsis": {
       "oneClick": false,
